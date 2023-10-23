@@ -1,23 +1,24 @@
 import React from 'react';
-import { Filter } from '../FilterInterface';
 import Checkbox from '../../../UI/Checkbox/Checkbox';
-import { getFlowers } from '../../../../utils/FlowersUtils';
+import { Filter } from '../FilterInterface';
 import Accordeon from '../../../UI/Accordeon/Accordeon';
 
-function FlowerFilter({
+function CheckFilter({
   name,
   filter,
   setFilter,
+  options
 }: {
   name: string;
   filter: Filter;
   setFilter: (elem: Filter) => void;
+  options: string[]
 }) {
   return (
     <Accordeon name={name}>
       <Checkbox
         name={name}
-        options={getFlowers()}
+        options={options}
         setFilter={setFilter}
         filter={filter}
       />
@@ -25,4 +26,4 @@ function FlowerFilter({
   );
 }
 
-export default FlowerFilter;
+export default CheckFilter;

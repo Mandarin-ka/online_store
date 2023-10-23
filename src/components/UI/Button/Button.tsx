@@ -4,10 +4,12 @@ function Button({
   className,
   onClick,
   children,
+  style,
 }: {
   className: string;
   onClick?: () => void;
   children?: React.ReactNode;
+  style?: React.CSSProperties;
 }) {
   return (
     <button
@@ -19,7 +21,7 @@ function Button({
               return;
             }
       }
-    >
+      style={style}>
       {children}
     </button>
   );

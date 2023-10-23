@@ -1,0 +1,11 @@
+.price__option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option,
+.price{
+  text-transform: capitalize;
+  color: inherit;
+}

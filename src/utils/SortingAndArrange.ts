@@ -14,12 +14,12 @@ export const flowersSort = (flowers: IFlower[], sort: string): IFlower[] => {
 const queryFilter = (flowers: IFlower[], filter: Filter) =>
   flowers.filter(
     (e) =>
-      e.category.includes(filter.query) ||
+      e.category.toLowerCase().includes(filter.query.toLowerCase()) ||
       e.country.includes(filter.query) ||
-      e.description.includes(filter.query) ||
+      e.description.toLowerCase().includes(filter.query.toLowerCase()) ||
       e.occasions.includes(filter.query) ||
-      e.title.includes(filter.query) ||
-      e.category.includes(filter.query)
+      e.title.toLowerCase().includes(filter.query.toLowerCase()) ||
+      e.category.toLowerCase().includes(filter.query.toLowerCase())
   );
 
 const typeFilter = (flowers: IFlower[], filter: Filter) => {
