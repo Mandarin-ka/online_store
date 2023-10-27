@@ -1,0 +1,26 @@
+.counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+  padding: 4.2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #00000017;
+}
+
+.button{
+  width: 33.5px;
+  height: 33.5px;
+  border-radius: 4px;
+  border: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value{
+  color: #333;
+}

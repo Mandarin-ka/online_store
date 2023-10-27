@@ -1,0 +1,47 @@
+.colors{
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 5px #Bdbdbd;
+  transform: scale(0, 0);
+  transition: .2s;
+  border-radius: 6px;
+  padding: 1px 6px;
+  transform: scale(0, 0);
+  display: flex;
+}
+
+.colors.active{
+  transform: scale(1, 1);
+}
+
+.color{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.color_name{
+  color: #C73153;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.current__color{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0;
+  margin: 10px;
+}
+
+.color__block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100px;
+}

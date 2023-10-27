@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container.basket {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 70px 135px;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}

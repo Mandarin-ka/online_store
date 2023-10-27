@@ -32,3 +32,7 @@ export const getStoragedFlowers = (): number[] =>
   localStorage.getItem("favorites")
     ? JSON.parse(localStorage.getItem("favorites") || "[]")
     : [];
+
+export const getFlowersByIds = (ids:number[], flowers: IFlower[]): IFlower[] =>{
+  return flowers.filter(flower => ids.includes(flower.id));
+}
